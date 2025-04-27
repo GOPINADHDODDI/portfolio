@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doddi Gopinadh | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <input type="image" src="images\DODDI GOPINADH.png" alt="logo" width="40" height="40" />
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Edu/Intern</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <canvas id="network-canvas"></canvas>
+    <div class="home-content">
+      <div class="profile-pic-placeholder">
+        <img src="images/ProfilePic.png" alt="Profile Picture" width="100" height="100" />
+      </div>
+      <p class="greet">Hello, I'm</p>
+      <h1 class="fade-slide-name">Gopinadh Doddi</h1>
+      <div class="title-container">
+        <span class="static-text">Aspiring</span>
+        <span class="dynamic-text" id="changing-text"></span>
+      </div><br><br>
+      <a href="GopinadhDoddi_Resume.pdf" class="resume-button" download>Download CV</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://wa.me/918897236509" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://facebook.com/yourProfile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://t.me/+918897236509" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+      <a href="https://www.linkedin.com/in/gopinadh-doddi-1777a6256/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://x.com/DoddiNadh71164?t=UkvJAbvRWo-LUepc2e8lxA&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <svg class="wave-top" viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#0D1117" d="M0,64L48,80C96,96,192,128,288,138.7C384,149,480,139,576,128C672,117,768,107,864,96C960,85,1056,75,1152,64C1248,53,1344,43,1392,37.3L1440,32V0H1392C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0H0Z"></path>
+    </svg>
+    <div class="about-container">
+      <div class="about-left">
+        <div class="about-bg-text">
+          <span class="about-big">A B O U T</span>
+          <span class="about-small">ME</span>
+        </div>
+        <h2 class="greeting">Hey there! </h2><b>👋</b>
+        <h3 class="about-title">Why hire me for your next <br>Project!</h3>
+        <p class="about-description">
+          <b>I'm a highly adaptable and self-driven individual who's always eager to take on new challenges. With strong communication, leadership, and teamwork skills, I can manage tasks efficiently and deliver results under any circumstance. Hire me, and you get a passionate problem-solver who's ready to learn, lead, and contribute from day one.</b>
+        </p>
+        <p class="signature">~~ Gopinadh Doddi</p>
+        <div class="hire-me-container">
+          <a href="#contact" class="hire-me-btn">Hire Me</a>
+        </div>
+      </div>
+      <div class="about-right">
+        <img src="images\face-swap5.png" alt="Your profile picture" class="about-img">
+      </div>
+    </div>
+    <svg class="wave-bottom" viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#0D1117" d="M0,96L48,85.3C96,75,192,53,288,48C384,43,480,53,576,64C672,75,768,85,864,90.7C960,96,1056,96,1152,90.7C1248,85,1344,75,1392,69.3L1440,64V150H1392C1344,150,1248,150,1152,150C1056,150,960,150,864,150C768,150,672,150,576,150C480,150,384,150,288,150C192,150,96,150,48,150H0Z"></path>
+    </svg>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section full-screen">
+    <div class="skills-bg-text">SKILLS</div>
+    <div class="skill-filters">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="programming">Programming</button>
+      <button data-filter="tech">Soft & Tech</button>
+      <button data-filter="soft">Soft Skills</button>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card" data-category="programming">
+        <div class="skill-circle-meter" data-percent="85">
+          <svg viewBox="0 0 200 200">
+            <circle class="bg" cx="100" cy="100" r="100" />
+            <circle class="progress" cx="100" cy="100" r="100" />
+          </svg>
+          <div class="skill-label">
+            <h4>Java</h4>
+            <span>80%</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card" data-category="programming">
+        <div class="skill-circle-meter" data-percent="80">
+          <svg viewBox="0 0 200 200">
+            <circle class="bg" cx="100" cy="100" r="100" />
+            <circle class="progress" cx="100" cy="100" r="100" />
+          </svg>
+          <div class="skill-label">
+            <h4>C</h4>
+            <span>75%</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card" data-category="programming">
+        <div class="skill-circle-meter" data-percent="75">
+          <svg viewBox="0 0 200 200">
+            <circle class="bg" cx="100" cy="100" r="100" />
+            <circle class="progress" cx="100" cy="100" r="100" />
+          </svg>
+          <div class="skill-label">
+            <h4>DSA</h4>
+            <span>60%</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card" data-category="programming">
+        <div class="skill-circle-meter" data-percent="70">
+          <svg viewBox="0 0 200 200">
+            <circle class="bg" cx="100" cy="100" r="100" />
+            <circle class="progress" cx="100" cy="100" r="100" />
+          </svg>
+          <div class="skill-label">
+            <h4>Database</h4>
+            <span>70%</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card" data-category="tech">
+        <div class="skill-circle-meter" data-percent="90">
+          <svg viewBox="0 0 200 200">
+            <circle class="bg" cx="100" cy="100" r="100" />
+            <circle class="progress" cx="100" cy="100" r="100" />
+          </svg>
+          <div class="skill-label">
+            <h4>IoT</h4>
+            <span>90%</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card" data-category="tech">
+        <div class="skill-circle-meter" data-percent="85">
+          <svg viewBox="0 0 200 200">
+            <circle class="bg" cx="100" cy="100" r="100" />
+            <circle class="progress" cx="100" cy="100" r="100" />
+          </svg>
+          <div class="skill-label">
+            <h4>Arduino</h4>
+            <span>85%</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card" data-category="tech">
+        <div class="skill-circle-meter" data-percent="75">
+          <svg viewBox="0 0 200 200">
+            <circle class="bg" cx="100" cy="100" r="100" />
+            <circle class="progress" cx="100" cy="100" r="100" />
+          </svg>
+          <div class="skill-label">
+            <h4>Blynk IoT</h4>
+            <span>70%</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card" data-category="tech">
+        <div class="skill-circle-meter" data-percent="80">
+          <svg viewBox="0 0 200 200">
+            <circle class="bg" cx="100" cy="100" r="100" />
+            <circle class="progress" cx="100" cy="100" r="100" />
+          </svg>
+          <div class="skill-label">
+            <h4>Qlik Tool</h4>
+            <span>70%</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card" data-category="tech">
+        <div class="skill-circle-meter" data-percent="70">
+          <svg viewBox="0 0 200 200">
+            <circle class="bg" cx="100" cy="100" r="100" />
+            <circle class="progress" cx="100" cy="100" r="100" />
+          </svg>
+          <div class="skill-label">
+            <h4>MySQL Workbench</h4>
+            <span>70%</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card" data-category="tech">
+        <div class="skill-circle-meter" data-percent="65">
+          <svg viewBox="0 0 200 200">
+            <circle class="bg" cx="100" cy="100" r="100" />
+            <circle class="progress" cx="100" cy="100" r="100" />
+          </svg>
+          <div class="skill-label">
+            <h4>Gen AI</h4>
+            <span>50%</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card" data-category="soft">
+        <div class="skill-circle-meter" data-percent="95">
+          <svg viewBox="0 0 200 200">
+            <circle class="bg" cx="100" cy="100" r="100" />
+            <circle class="progress" cx="100" cy="100" r="100" />
+          </svg>
+          <div class="skill-label">
+            <h4>Communication</h4>
+            <span>95%</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card" data-category="soft">
+        <div class="skill-circle-meter" data-percent="85">
+          <svg viewBox="0 0 200 200">
+            <circle class="bg" cx="100" cy="100" r="100" />
+            <circle class="progress" cx="100" cy="100" r="100" />
+          </svg>
+          <div class="skill-label">
+            <h4>Project Management</h4>
+            <span>70%</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card" data-category="soft">
+        <div class="skill-circle-meter" data-percent="90">
+          <svg viewBox="0 0 200 200">
+            <circle class="bg" cx="100" cy="100" r="100" />
+            <circle class="progress" cx="100" cy="100" r="100" />
+          </svg>
+          <div class="skill-label">
+            <h4>Leadership</h4>
+            <span>85%</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card" data-category="soft">
+        <div class="skill-circle-meter" data-percent="88">
+          <svg viewBox="0 0 200 200">
+            <circle class="bg" cx="100" cy="100" r="100" />
+            <circle class="progress" cx="100" cy="100" r="100" />
+          </svg>
+          <div class="skill-label">
+            <h4>Team Work</h4>
+            <span>90%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="project-section">
+    <svg class="wave-top" viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#0D1117" d="M0,64L48,80C96,96,192,128,288,138.7C384,149,480,139,576,128C672,117,768,107,864,96C960,85,1056,75,1152,64C1248,53,1344,43,1392,37.3L1440,32V0H1392C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0H0Z"></path>
+    </svg>
+    <div class="github-icon project-animate">
+      <a href="https://github.com/GOPINADHDODDI" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="projects-bg-text">
+      <span class="projects-big">PROJECTS</span>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-inn">
+          <div class="card-fro">
+            <img src="images\icons8-falling-man-48.png" alt="Fall Detection Icon" class="project-icon">
+            <h3>Fall Detection Device</h3>
+          </div>
+          <div class="card-bac">
+            <p>Developed a smart IoT-based wearable using ESP32, MPU6050, and BLE to detect elderly falls in real-time. Enabled Bluetooth alerts, OTA firmware updates, deep sleep mode, and battery monitoring. Integrated motion sensing, status LEDs, and remote deployment features for a reliable, low-power, and user-friendly elderly safety solution.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inn">
+          <div class="card-fro">
+            <img src="images\icons8-chat.gif" alt="Fall Detection Icon" class="project-icon">
+            <h3>Real Time Chat App(Java)</h3>
+          </div>
+          <div class="card-bac">
+            <p>Built a real-time chat system using Java Swing and socket programming with a one-client-one-server architecture. Designed a clean and responsive UI for smooth messaging. Focused on real-time communication, efficient data transfer, and intuitive message alignment (sender-right, receiver-left). This project strengthened my skills in Java networking, GUI design, and client-server architecture.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inn">
+          <div class="card-fro">
+            <img src="images\icons8-analytics.gif" alt="Fall Detection Icon" class="project-icon">
+            <h3>Airline Data Analytics</h3>
+          </div>
+          <div class="card-bac">
+            <p>Created key KPIs like average delay time, cancellation rate, and on-time performance. Designed visually engaging dashboards in Qlik Sense using bar charts, pie charts, line graphs, and filters. These dashboards allowed real-time interaction and trend analysis, helping to identify critical performance metrics and improve data-driven decisions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg class="wave-bottom" viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#0D1117" d="M0,96L48,85.3C96,75,192,53,288,48C384,43,480,53,576,64C672,75,768,85,864,90.7C960,96,1056,96,1152,90.7C1248,85,1344,75,1392,69.3L1440,64V150H1392C1344,150,1248,150,1152,150C1056,150,960,150,864,150C768,150,672,150,576,150C480,150,384,150,288,150C192,150,96,150,48,150H0Z"></path>
+    </svg>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section" id="stats">
+    <div class="stats-container">
+      <div class="stat-box">
+        <h2 id="finishedCount">0</h2>
+        <p>Finished Projects</p>
+      </div>
+      <div class="stat-box">
+        <h2 id="liveCount">0</h2>
+        <p>Live Projects</p>
+      </div>
+      <div class="stat-box">
+        <h2 id="internCount">0</h2>
+        <p>Internships</p>
+      </div>
+      <div class="stat-box">
+        <h2 id="pushupCount">0</h2>
+        <p>Problems Solved</p>
+      </div>
+    </div>
+  </section>
+
+  <svg class="wave-top" viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#ffffff" d="M0,96L48,85.3C96,75,192,53,288,48C384,43,480,53,576,64C672,75,768,85,864,90.7C960,96,1056,96,1152,90.7C1248,85,1344,75,1392,69.3L1440,64V150H0Z" />
+  </svg>
+
+  <!-- Education Section -->
+  <section id="education" class="education-section">
+    <div class="education-bg-text">
+      <span class="education-big">E D U C A T I O N</span>
+    </div>
+    <div class="education-container">
+      <div class="edu-card">
+        <div class="edu-content">
+          <h3>V R High School</h3><br>
+          <p><b>SSC</b><br><br>GPA: <b>9.8</b>/10<br>2017-2018</p>
+        </div>
+        <div class="edu-front">
+          <img src="images\icons8-school-boy-85.png" alt="School Icon" class="edu-icon-img" />
+          School
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-content">
+          <h3>Jupiter Junior College</h3><br>
+          <p><b>Intermediate</b><br><br>CGPA: <b>9.88</b>/10<br>2018-2020</p>
+        </div>
+        <div class="edu-front">
+          <img src="images\icons8-college-62.png" alt="College Icon" class="edu-icon-img" />
+          College
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-content">
+          <h3>R.V.R. & J.C College of Engineering</h3><br>
+          <p><b>B.Tech - CSE (IoT)</b><br><br>CGPA: <b>9.26</b>/10<br>2021-2025</p>
+        </div>
+        <div class="edu-front">
+          <img src="images\icons8-university-64.png" alt="University Icon" class="edu-icon-img" />
+          University
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internships Section -->
+  <section id="internships" class="internships-section">
+    <div class="internship-bg-text">
+      <span class="internship-big">S E R V I C E S</span>
+    </div>
+    <h1 class="internships-heading">Internships</h1>
+    <div class="internship-card-container">
+      <div class="internship-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>GRIP - PHP Intern</h3><br><br>
+            <h4>Sparks Foundation</h4><br>
+            <h6>Remote</h6><br>
+            <h6>04/2023 - 05/2023</h6>
+          </div>
+          <div class="card-back">
+            <p>Developed a Basic Banking System web app using HTML, CSS, PHP, JavaScript, and MySQL. Implemented secure transactions, customer data display, and real-time fund transfers between users. Gained hands-on experience in full-stack web development and database management with a focus on user-friendly interface and functionality.</p>
+          </div>
+        </div>
+      </div>
+      <div class="internship-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Data Analytics Intern - QlikSense</h3><br>
+            <h4>Smart Internz</h4><br>
+            <h6>Remote</h6><br>
+            <h6>04/2024 - 06/2024</h6>
+          </div>
+          <div class="card-back">
+            <p>Created key KPIs like average delay time, cancellation, and on-time performance. Designed visually engaging dashboards in Qlik Sense using bar charts, line graphs, and filters. These dashboards allowed real-time interaction and trend analysis, helping to identify critical performance metrics and improve data-driven decisions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="internship-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Electronics & IoT Intern</h3><br><br>
+            <h4>Comcare Enterprises</h4><br>
+            <h6>Remote</h6><br>
+            <h6>08/2024 - 11/2024</h6>
+          </div>
+          <div class="card-back">
+            <p>Interned at Comcare Industries, developing an IoT-based Fall Detection Device using ESP32, MPU6050, and BLE. Gained hands-on experience in agile sprints, corporate workflow, and project tracking via Asana. Collaborated with frontend/backend teams, contributing to real-time alerts, and overall project management.</p>
+          </div>
+        </div>
+      </div>
+      <div class="internship-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>IoT Equipment Handler & Moderator</h3><br>
+            <h4>iTBI (DST-NIDHI)</h4><br>
+            <h6>RJ E-Nest | RVRJCCE</h6><br>
+            <h6>09/2024 - 12/2024</h6>
+          </div>
+          <div class="card-back">
+            <p>Worked as an IoT Equipment Handler & Moderator at the TBI hub, promoting entrepreneurship. Planned and conducted innovation-driven events, design development programs, and hackathons to foster creative thinking and startup culture.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Icon Stats Section -->
+  <section id="icon-stats" class="icon-stats-section">
+    <div class="icon-container">
+      <div class="icon-box">
+        <div class="icon-circle">
+          <img src="images\icons8-certificates-64.png" alt="Coding Icon" />
+        </div>
+        <div class="icon-name">Certificates</div> 
+        <div class="popup-card">1. Java Full Stack Certification | Wipro<br>
+          2. Prompt Engineering for ChatGPT | Coursera<br>
+          3. DBMS Course | Scalar Topics<br>
+          4. Data Analytics | Google
+        </div>
+      </div>
+      <div class="icon-box">
+        <div class="icon-circle">
+          <img src="images\icons8-medal-32.png" alt="Team Icon" />
+        </div>
+        <div class="icon-name">Awards</div>
+        <div class="popup-card">1. Certificate of Merit -Academic Prize.<br>
+          2. Won 2<sup>nd</sup> prize in Design Development Competition.<br>
+          3. Selected for SIH and UDVIKASH (24-hour Hackthon).<br>
+          4. PPT presentation on "Mechatronics" won 2<sup>nd</sup> prize.<br>
+        </div>
+      </div>
+      <div class="icon-box">
+        <div class="icon-circle">
+          <img src="images\icons8-achievement-64.png" alt="Ideas Icon" />
+        </div>
+        <div class="icon-name">Achievements</div>
+        <div class="popup-card">1. Selected for SIH and UDVIKASH (24-hour Hackthon)<br>
+          2. Certificate of Merit-Naukri Campus Young Turks.<br>
+          3. Best Volunteer Award | National Service Scheme.
+        </div>
+      </div>
+      <div class="icon-box">
+        <div class="icon-circle">
+          <img src="images\icons8-activities-64.png" alt="Achievement Icon" />
+        </div>
+        <div class="icon-name">Activities</div>
+        <div class="popup-card">1. Organized Smart Idea Challenge<br>
+          2. Organized "Mock Up" event for National wide Fest<br>
+          3. Attended IEEE SPAX - Skill Development workshop<br>
+          4. Attended NSS Special Camp 2024.</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="background-title contact-animate">C O N T A C T</h2>
+    <div class="foreground-heading contact-animate">Let's make a Deal 🤝</div>
+    <p class="contact-description">We'd love to connect with you. Let's build something great together.</p>
+    <div class="contact-container">
+      <div class="contact-left">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>3/15-1 Pamidimarru, Kotappakonda, Guntur, India</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone-alt"></i>
+          <span>+91 8897236509</span>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.55200044263904!2d80.01993245621729!3d16.125988883850997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a870012f65a15%3A0x43f6e9ed9a287cc0!2sPAMIDIMARRU!5e0!3m2!1sen!2sin!4v1745504391319!5m2!1sen!2sin" 
+            width="100%" height="100%" frameborder="0"
+            style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form action="https://formsubmit.co/doddigopinadh@gmail.com" method="POST" class="contact-form">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Contact from Portfolio">
+          <input type="hidden" name="_template" value="box">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your EmailId" required>
+          <textarea name="message" placeholder="Happy to connect with you.." required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="soci-icon">
+      <a href="https://github.com/GOPINADHDODDI" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:doddigopinadh@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/gopinadh-doddi-1777a6256/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Gopinadh Doddi.   All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
